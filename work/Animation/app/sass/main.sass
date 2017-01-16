@@ -1,0 +1,511 @@
+*::-webkit-input-placeholder
+	color: #7bbeb3
+	opacity: 1
+/* VARS */
+
+/* CUSTOM STYLE */
+section
+	min-height: 100vh
+	h2
+		font-family: 'LatoLight'
+		text-transform: uppercase
+		color: #fff
+		font-size: 5rem
+		text-align: center
+/*HEADER*/
+.header
+	background-image: url(../img/bg_header.png)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: 100% bottom
+	min-height: 100vh
+	background-attachment: fixed
+	
+.logo
+	font-family: 'CharlevoixProThin'
+	color: #fff
+	float: left
+	padding: 15px 0
+	font-size: 3rem
+	transform: scale(1)
+	transition: ease .5s all
+	&:hover
+		text-decoration: none
+		transform: scale(1.2)
+		color: #fff
+
+/* NAV */
+.nav
+	text-align: right
+
+.menu
+	display: inline-block
+	li
+		float: left
+		padding: 30px 10px 15px 10px
+		margin: 0 5px
+		list-style-type: none
+		border-radius: 0 0 5px 5px
+		letter-spacing: 1px
+		transition: all ease .5s
+		&:hover
+			background-color: #74c7d5
+	a
+		color: #fff
+		font-family: 'CharlevoixProThin'
+		&:hover
+			text-decoration: none
+			color: #fff
+/*CONTENT HEADER*/
+.header-content
+	margin-top: 15%
+	text-align: center
+	color: #74c7d5
+
+.header-content-text
+	color: #74c7d5
+	line-height: 1
+	h1
+		font-family: 'LatoLight'
+		font-size: 6rem
+		text-transform: uppercase
+	span
+		font-family: 'LatoBold'
+		text-transform: uppercase
+		font-size: 8rem
+		letter-spacing: 5px
+
+/*Button menu style*/
+.btn_mnu
+  width: 50px
+  height: 50px
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  background-color: #3e3e3e
+  cursor: pointer
+  position: fixed
+  margin-top: 15px
+  left: 80%
+  z-index: 9999
+
+.btn_row
+  height: 2px
+  width: 60%
+  margin: 2px 0
+  background-color: #fff
+  position: relative
+  -webkit-transition: all .5s
+  -o-transition: all .5s
+  transition: all .5s
+
+.btn_mnu.active .btn_row
+  &:first-child
+    -webkit-transform: rotate(-135deg)
+    -ms-transform: rotate(-135deg)
+    -o-transform: rotate(-135deg)
+    transform: rotate(-135deg)
+    top: 6px
+  &:last-child
+    -webkit-transform: rotate(-225deg)
+    -ms-transform: rotate(-225deg)
+    -o-transform: rotate(-225deg)
+    transform: rotate(-225deg)
+    top: -6px
+  &:nth-child(2)
+    opacity: 0
+/*Button menu style end */
+
+
+/* section2 services */
+.services
+	background-image: url(../img/s2_bg.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: bottom 100% 
+	background-attachment: fixed
+/* NAV section 2*/
+.sect-nav__2
+	li
+		&:hover
+			background-color: #df5c64
+/*section2 text*/
+.text-section
+	text-align: center
+	color: #fff
+	p
+		font-size: 1.65rem
+		text-transform: uppercase
+		font-family: 'LatoLight'
+		span
+		  color: #e28b90
+		  font-weight: bold
+	.services-text__small
+		font-size: 1.2rem
+		color: #e28b90
+		font-weight: bold
+		animation-delay: .5s
+
+.work-filter-wraper
+	hr
+		border-color: #94b963
+
+/*section2 item*/
+.services-item
+	margin-top: 80px
+
+.services-item-content
+	text-align: center
+	background-color: #c45158
+	border-radius: 8px
+	color: #fff
+	margin-bottom: 25px
+	
+	img
+		padding-top: 40px
+	h3
+		margin-top: 25px
+		font-family: 'LatoLight'
+		text-transform: uppercase
+		font-size: 2.5rem
+	p
+		padding: 10px 15px 40px 15px
+		font-family: 'LatoRegular'	
+		font-size: 1.188rem
+
+
+/*section3 team*/
+.team
+	background-image: url(../img/s3_bg.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: bottom 100% 
+	.services-text__small__purpur
+		color: #e6d1e3
+
+.sect-nav__3
+	li
+		&:hover
+			background-color: #91778e
+
+.team-baner
+	margin: 60px auto
+	display: block
+	width: 250px
+	padding: 15px 40px
+	text-align: center
+	background-color: #a1ca6c
+	font-family: 'LatoBold'
+	text-transform: uppercase
+	color: #fff
+	font-size: 2.1rem
+	border-radius: 8px
+	position: relative
+	animation-delay: .5s
+	&::before
+		content: ' '
+		height: 0
+		width: 0
+		border-left: 20px solid transparent
+		border-right: 20px solid transparent
+		border-top: 20px solid #a1ca6c
+		position: absolute
+		top: 100%
+		left: 43.5%
+
+/*section3 item content*/
+.team-item-content
+	background-color: rgba(#5c4b5a, .3)
+	text-align: center
+	border-radius: 8px
+	margin-bottom: 30px
+	transition: ease all .8s
+	h3
+		font-size: 2.5rem
+		margin: 0
+		text-transform: uppercase
+		font-family: 'LatoBold'
+		color: #c7b6c5
+	span
+	  color: #9dc26b
+	  font-family: 'LatoRegular'
+	  font-size: 1.3rem
+
+.team-item-img
+	padding: 40px 0
+
+.user-img-hover
+	transition: ease all .8s
+	display: none
+
+.team-item-social
+	padding: 30px 0
+	.fa
+		background-color: #a1859e
+		border-radius: 50%
+		padding: 15px 15px
+		width: 45px
+		display: inline-block
+		font-size: 1.5rem
+		color: #fff
+		transition: ease all .8s
+
+/*Hover item*/
+.team-item-content
+	transition: ease all .8s
+	&:hover
+		background-color: #5c4b5a
+		transition: ease all .8s
+		.team-item-img
+			.user-img
+				display: none
+			.user-img-hover
+				display: inline-block
+		h3
+			color: #fff
+			transition: ease all .8s
+		span
+			color: #d1766a
+			transition: ease all .8s
+		.fa-facebook
+			color: #fff
+			background-color: #4f689e
+			transition: ease all .8s
+		.fa-twitter
+			background-color: #74c7d5
+			transition: ease all .8s
+		.fa-github-alt
+			background-color: #df5c64
+			transition: ease all .8s
+		.fa-linkedin
+			background-color: #3e61af
+			transition: ease all .8s
+
+/*section4 work*/
+.work
+	background-image: url(../img/s4_bg.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: bottom 100%
+	background-attachment: fixed
+	.services-text__small__white
+		color: #fff
+
+.sect-nav__4
+	li
+		&:hover
+			background-color: #a1ca6c
+
+/*filter label*/
+.work-filter-wraper
+	h3
+		text-transform: uppercase
+		color: #fff
+		font-family: 'LatoBold'
+		font-size: 2rem
+		padding: 0
+		margin: 15px 0
+
+.filter-button
+	text-align: right
+	margin: 15px 0
+	ul,
+	li
+		padding: 0
+		margin: 0
+		list-style-type: none
+	li
+		display: inline-block
+		padding: 5px 25px
+		cursor: pointer
+		color: #fff
+		font-family: 'LatoLight'
+		font-weight: bold
+		font-size: 1.4rem
+		transition: all .5s ease
+		&.active
+			background-color: #f5c149
+			border-radius: 5px
+		&:hover
+			background-color: #a1ca6c
+			border-radius: 5px
+
+
+/*filter item*/
+.filter-item-wrap
+	hr
+		border-color: #94b963
+
+.filter-item-content
+	background-color: #eeeeee
+	border-radius: 5px
+	position: relative
+	margin-bottom: 25px
+	transition: all .8s ease
+	img
+		border-radius: 5px 5px 0 0
+		transition: all .8s ease
+	p
+		text-transform: uppercase
+		text-align: center
+		padding: 20px 0
+		color: #727272
+		font-size: 1.18rem
+		font-family: 'LatoRegular'
+		&::before
+			content: ' '
+			height: 0
+			width: 0
+			border-left: 20px solid transparent
+			border-right: 20px solid transparent
+			border-bottom: 20px solid #eeeeee
+			position: absolute
+			top: 65%
+			left: 42.5%
+
+.filter-item-content
+	&:hover
+		img
+			opacity: .8
+			transition: all .8s ease
+		
+
+/*section5 contact*/
+.contact
+	background-image: url(../img/s5_bg.png)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: bottom 100%
+	background-attachment: fixed
+	.services-text__small__white
+		color: #fff
+		font-size: 1.2rem
+		text-align: center
+		text-transform: uppercase
+		font-family: 'LatoLight'
+		font-weight: bold
+
+.sect-nav__5
+	li
+		&:hover
+			background-color: #82c8bd
+
+/* contact content*/
+.contact-info
+	margin-top: 20px
+	color: #fff
+	font-family: 'LatoLight'
+	h3
+		font-size: 2.5rem
+	p
+		font-family: 'LatoBold'
+		font-size: 1.6rem
+		color: #b9dbd6
+	span
+		font-size: 1.3rem
+	img
+		padding-top: 8%
+
+.contact-info__file
+	margin-top: 35px
+	p
+		font-size: 1.3rem
+		span
+			color: #fff
+			text-decoration: underline
+			padding-left: 25px
+			font-family: 'LatoLight'
+			cursor: pointer
+
+/* contact form*/
+.form
+	text-align: center
+	.col-md-6
+		padding: 0
+		margin: 0
+	.form-input
+		width: 99%
+		padding: 10px	20px
+		margin: 20px 0
+		background-color: #68a097
+		border: 1px solid transparent
+		border-radius: 5px
+		font-family: 'LatoRegular'
+		font-size: 1.5rem
+		color: #1e1e1e
+		&:focus
+			background-color: #fff
+			border-color: transparent
+
+.form-message
+	height: 150px
+	width: 100%
+	border-radius: 5px
+	margin-top: 15px
+	background-color: #68a097
+	border: none
+	padding: 15px 20px
+	color: #1e1e1e
+	font-family: 'LatoRegular'
+	font-size: 1.5rem
+	&:focus
+		background-color: #fff
+		border-color: #1e1e1e
+
+/* button send */
+.form-button
+	display: inline-block
+	margin-top: 30px
+	padding: 10px 95px
+	background-color: #df5c64
+	text-transform: uppercase
+	color: #fff
+	font-family: 'LatoBold'
+	font-size: 2.1rem
+	border-radius: 5px
+	box-shadow: 0 5px 0 #c8535a
+	transform: scale(1)
+	transition: all ease .5s
+	&:hover
+		transform: scale(1.1)
+		color: #fff
+		text-decoration: none
+
+/* social */
+.social
+	text-align: center
+	margin-top: 80px
+	background-color: #68a097
+	padding: 35px 0
+	img
+		height: 50px
+		width: auto
+		padding-left: 25px
+		transform: scale(1)
+		transition: all ease .5s
+		&:hover
+			transform: scale(1.5)
+
+/*Animation delay*/
+.animation_itm1
+	animation-delay: .3s
+
+.animation_itm2
+	animation-delay: .5s
+
+.animation_itm3
+	animation-delay: .7s
+
+.animation_itm4
+	animation-delay: .9s
+
+.animation_gallery
+	animation-duration: 1.3s
+
+.animation_gallery1
+	animation-duration: 1.3s

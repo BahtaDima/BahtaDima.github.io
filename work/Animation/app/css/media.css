@@ -1,0 +1,118 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	/*Responsive nav*/
+	.menu{
+		display: none;
+		margin-top: 70px;
+		padding: 0;
+	}
+	.menu.active{
+		display: block;
+		text-align: center;
+		background-color: #3e3e3e;
+		opacity: .9;
+		z-index: 100;
+		top: 0;
+		left: 0;
+		border-radius: 5px;
+		position: fixed;
+		left: 10%;
+		right: 10%;
+	}
+	.menu.active li{
+		margin-top: 5px;
+		margin-bottom: 5px;
+		display: block;
+		float: none;
+		padding: 15px ;
+		z-index: 1000;
+	}
+	.menu.active a {
+		z-index: 999;
+
+	}
+	.menu.active li:hover{
+		border-radius: 5px;
+	}
+	.menu.active a:hover{
+		color: #3e3e3e;
+	}
+	/* TEXT margin*/
+	.text-section{
+		margin-top: 80px;
+	}
+
+	.filter-item-content p::before{
+		border: none;
+	}
+	.work-filter-wraper{
+		text-align: center;
+	}
+	.filter-button{
+		text-align: center;
+	}
+
+	/*contact*/
+	.contact-info {
+		text-align: center;
+	}
+
+	.contact-info .img-responsive{
+		display: inline;
+	}
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.filter-button li {
+		display: block;
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
